@@ -1,5 +1,3 @@
-# image_classification
-classify images from the CIFAR-10 dataset
 
 # Image Classification
 In this project, you'll classify images from the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html).  The dataset consists of airplanes, dogs, cats, and other objects. You'll preprocess the images, then train a convolutional neural network on all the samples. The images need to be normalized and the labels need to be one-hot encoded.  You'll get to apply what you learned and build a convolutional, max pooling, dropout, and fully connected layers.  At the end, you'll get to see your neural network's predictions on the sample images.
@@ -750,6 +748,28 @@ with tf.Session() as sess:
     Epoch  1, CIFAR-10 Batch 1:  Loss:     2.2162 Validation Accuracy: 0.166600
     Epoch  1, CIFAR-10 Batch 2:  Loss:     2.0456 Validation Accuracy: 0.265200
     Epoch  1, CIFAR-10 Batch 3:  Loss:     1.7017 Validation Accuracy: 0.357600
+    Epoch  1, CIFAR-10 Batch 4:  Loss:     1.8118 Validation Accuracy: 0.396000
+    Epoch  1, CIFAR-10 Batch 5:  Loss:     1.7116 Validation Accuracy: 0.390400
+    Epoch  2, CIFAR-10 Batch 1:  Loss:     1.8015 Validation Accuracy: 0.394400
+    Epoch  2, CIFAR-10 Batch 2:  Loss:     1.6172 Validation Accuracy: 0.457600
+    Epoch  2, CIFAR-10 Batch 3:  Loss:     1.2126 Validation Accuracy: 0.448600
+    Epoch  2, CIFAR-10 Batch 4:  Loss:     1.4468 Validation Accuracy: 0.450000
+    Epoch  2, CIFAR-10 Batch 5:  Loss:     1.4004 Validation Accuracy: 0.499200
+    Epoch  3, CIFAR-10 Batch 1:  Loss:     1.4605 Validation Accuracy: 0.496600
+    Epoch  3, CIFAR-10 Batch 2:  Loss:     1.3153 Validation Accuracy: 0.496000
+    Epoch  3, CIFAR-10 Batch 3:  Loss:     0.9746 Validation Accuracy: 0.483000
+    Epoch  3, CIFAR-10 Batch 4:  Loss:     1.1277 Validation Accuracy: 0.539600
+    Epoch  3, CIFAR-10 Batch 5:  Loss:     1.1680 Validation Accuracy: 0.523200
+    Epoch  4, CIFAR-10 Batch 1:  Loss:     1.2998 Validation Accuracy: 0.492800
+    Epoch  4, CIFAR-10 Batch 2:  Loss:     1.0552 Validation Accuracy: 0.510000
+    Epoch  4, CIFAR-10 Batch 3:  Loss:     0.8321 Validation Accuracy: 0.535400
+    Epoch  4, CIFAR-10 Batch 4:  Loss:     1.0060 Validation Accuracy: 0.569200
+    Epoch  4, CIFAR-10 Batch 5:  Loss:     1.0160 Validation Accuracy: 0.566800
+    Epoch  5, CIFAR-10 Batch 1:  Loss:     1.0566 Validation Accuracy: 0.566000
+    Epoch  5, CIFAR-10 Batch 2:  Loss:     0.8211 Validation Accuracy: 0.580400
+    Epoch  5, CIFAR-10 Batch 3:  Loss:     0.7027 Validation Accuracy: 0.542400
+    Epoch  5, CIFAR-10 Batch 4:  Loss:     0.7987 Validation Accuracy: 0.600200
+    Epoch  5, CIFAR-10 Batch 5:  Loss:     0.8115 Validation Accuracy: 0.595800
 
 
 # Checkpoint
@@ -823,6 +843,15 @@ def test_model():
 
 test_model()
 ```
+
+    INFO:tensorflow:Restoring parameters from ./image_classification
+    Testing Accuracy: 0.5955078125
+    
+
+
+
+![png](output_39_1.png)
+
 
 ## Why 50-80% Accuracy?
 You might be wondering why you can't get an accuracy any higher. First things first, 50% isn't bad for a simple CNN.  Pure guessing would get you 10% accuracy. That's because there are many more techniques that can be applied to your model and we recemmond that once you are done with this project, you explore!
